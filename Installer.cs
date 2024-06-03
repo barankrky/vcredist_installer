@@ -13,13 +13,13 @@ namespace vcredist_installer
             Console.WriteLine("\n     Visual C++ Redistributable Installer by barankrky\n     https://github.com/barankrky/vcredist_installer \n");
 
         }
-        static void CheckRedistPackages()
+        static void CheckRedistributables()
         {
-            Console.WriteLine("- Checking packages...");
+            Console.WriteLine("- Checking redistributables...");
             Thread.Sleep(250);
-            if (Directory.Exists("packages"))
+            if (Directory.Exists("redistributables"))
             {
-                DirectoryInfo package_dir = new DirectoryInfo("packages");
+                DirectoryInfo package_dir = new DirectoryInfo("redistributables");
                 FileInfo[] package_files = package_dir.GetFiles("*vcredist*.exe");
                 foreach (FileInfo file in package_files)
                 {
@@ -29,7 +29,7 @@ namespace vcredist_installer
             }
             else
             {
-                Console.WriteLine("-- Packages not found. Please ensure that there is a 'packages' folder in the location where you run the application.");
+                Console.WriteLine("-- redistributables not found. Please ensure that there is a 'redistributables' folder in the location where you run the application.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
@@ -40,7 +40,7 @@ namespace vcredist_installer
         }
         static void Execute(string fileName, string args)
         {
-            Environment.CurrentDirectory = AppDomain.CurrentDomain.BaseDirectory + "packages";
+            Environment.CurrentDirectory = AppDomain.CurrentDomain.BaseDirectory + "redistributables";
             Console.WriteLine("-> Installing " + fileName + "...");
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = "cmd.exe";
@@ -102,8 +102,8 @@ namespace vcredist_installer
         static void Initialize()
         {
             PrintTitle();
-            // Check vcredist packages
-            CheckRedistPackages();
+            // Check vcredist redistributables
+            CheckRedistributables();
 
         }
 
