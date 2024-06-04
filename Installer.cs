@@ -7,7 +7,7 @@ namespace vcredist_installer
 {
     public class Installer
     {
-        static string console_title = "Visual C++ vcredists All-in-One Package Installer - by barankrky";
+        static string console_title = "Visual C++ VCRedists All-in-One Package Installer - by barankrky";
         static string app_title = "\n     Visual C++ Redistributable Installer by barankrky\n     https://github.com/barankrky/vcredist_installer \n";
 
         static void CheckVCRedists()
@@ -113,31 +113,19 @@ namespace vcredist_installer
                 default:
                     break;
             }
-
-
-            
-
             Console.Clear();
             Console.WriteLine(app_title);
             Console.WriteLine(">> All vcredists are installed completely.");
             Console.WriteLine(">> Closing in 3 seconds.");
             Thread.Sleep(2800);
             Environment.Exit(0);
-
-        }
-
-        static void Initialize()
-        {
-            Console.Title = console_title;
-            Console.WriteLine(app_title);
-            // Check vcredist vcredists
-            CheckVCRedists();
-
         }
 
         public static void Start()
         {
-            Initialize();
+            Console.Title = console_title;
+            Console.WriteLine(app_title);
+            CheckVCRedists();
             Install();
         }
     }
