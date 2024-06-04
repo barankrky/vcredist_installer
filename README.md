@@ -1,7 +1,7 @@
 # Visual C++ Redistributables All-in-One Installer for Windows
 
-- Automatic and silent installation.
-- Install for 32-bit or 64-bit computer.
+- Completely silent installation.
+- Automatically install for 32-bit or 64-bit computer.
 - Tested on Windows 10
 
 ## How to install
