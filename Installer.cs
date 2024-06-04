@@ -129,6 +129,7 @@ namespace vcredist_installer
         static void Initialize()
         {
             Console.Title = console_title;
+            Console.WriteLine(app_title);
             // Check vcredist vcredists
             CheckVCRedists();
 
