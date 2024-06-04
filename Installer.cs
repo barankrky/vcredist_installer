@@ -121,6 +121,7 @@ namespace vcredist_installer
             Environment.Exit(0);
         }
 
+
         public static void Start()
         {
             Console.Title = console_title;
