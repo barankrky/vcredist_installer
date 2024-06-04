@@ -7,7 +7,7 @@ namespace vcredist_installer
 {
     public class Installer
     {
-        static string console_title = "Visual C++ VCRedists All-in-One Package Installer - by barankrky";
+        static string console_title = "Visual C++ Redistributables All-in-One Package Installer - by barankrky";
         static string app_title = "\n     Visual C++ Redistributable Installer by barankrky\n     https://github.com/barankrky/vcredist_installer \n";
 
         static void CheckVCRedists()
