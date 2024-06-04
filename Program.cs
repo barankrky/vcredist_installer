@@ -11,7 +11,6 @@ namespace vcredist_installer
         static void Main(string[] args)
         {
             Installer.Start();
-            Console.ReadLine();
         }
     }
 }
