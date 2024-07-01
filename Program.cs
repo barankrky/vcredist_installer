@@ -10,7 +10,7 @@ namespace vcredist_installer
     {
         static void Main(string[] args)
         {
-            ConsoleInstaller.Start();
+            SilentInstaller.Start();
         }
     }
 }
