@@ -73,7 +73,7 @@ namespace vcredist_installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Visual C++ Redistributables All-in-One Package Installer - by barankrky.
+        ///   Looks up a localized string similar to Visual C++ Redistributables All-in-One Package Installer.
         /// </summary>
         internal static string console_title {
             get {
