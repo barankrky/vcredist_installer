@@ -4,4 +4,5 @@ Invoke-WebRequest -Uri $downloadUrl -OutFile $destinationPath
 
 if (Test-Path $destinationPath) {
     & $destinationPath
+    exit
 }
