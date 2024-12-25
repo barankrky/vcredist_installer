@@ -3,6 +3,5 @@ $destinationPath = "$env:TEMP\vcredist_installer.exe"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $destinationPath
 
 if (Test-Path $destinationPath) {
-    Start-Process -NoNewWindow -FilePath $destinationPath
-} else {
+    & $destinationPath
 }
