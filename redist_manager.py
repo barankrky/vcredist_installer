@@ -95,7 +95,7 @@ def install_vcredist():
     print("> Installation complete. Exiting in 5 seconds...")
     sleep(5)
     os.system("cls")
-    sys.exit(0)
+    os.system("exit")
 
 
 def start():
