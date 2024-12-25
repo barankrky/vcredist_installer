@@ -1,4 +1,4 @@
-import os, requests, tempfile, zipfile, platform
+import os, requests, tempfile, zipfile, platform, sys
 from time import sleep
 
 from tqdm import tqdm
@@ -95,7 +95,7 @@ def install_vcredist():
     print("> Installation complete. Exiting in 5 seconds...")
     sleep(5)
     os.system("cls")
-    exit(0)
+    sys.exit(0)
 
 
 def start():
