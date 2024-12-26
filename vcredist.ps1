@@ -1,8 +1,7 @@
-﻿$downloadUrl = "https://github.com/barankrky/vcredist_installer/raw/refs/heads/master/vcredist_installer.exe"
-$destinationPath = "$env:TEMP\vcredist_installer.exe"
-Invoke-WebRequest -Uri $downloadUrl -OutFile $destinationPath
+﻿$url = "https://github.com/barankrky/vcredist_installer/raw/refs/heads/master/vcredist_installer.exe"
+$path = "$env:TEMP\vcredist_installer.exe"
 
-if (Test-Path $destinationPath) {
-    & $destinationPath
-    exit
-}
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $path)
+
+& $destinationPath
