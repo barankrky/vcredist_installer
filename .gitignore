@@ -1,5 +1,28 @@
-/build/
-/build/main/
-/dist/
-/main.spec
-/temp.py
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE specific files
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Distribution files
+build/
+dist/
+*.egg-info/
+*.spec
+
