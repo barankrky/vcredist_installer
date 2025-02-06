@@ -26,4 +26,7 @@ dist/
 *.egg-info/
 *.spec
 
+<<<<<<< HEAD
 *.ico
+=======
+>>>>>>> 0f93ca9f52db9450e50acceb91e27d3b68d6f76b
