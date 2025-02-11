@@ -32,7 +32,6 @@ def get_vcredist():
     extract_vcredist()
 
 def clean_up():
-    """Geçici dosyaları siler."""
     if os.path.exists(downloaded_zip_path):
         os.remove(downloaded_zip_path)
     if os.path.exists(os.path.join(temp_path, "vcredists")):
