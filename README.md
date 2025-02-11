@@ -8,7 +8,7 @@ Bu proje, Microsoft Visual C++ Runtimes'ı kolayca indirip kurmak için bir ara�
 - Otomatik kurulum, sadece çalıştırın ve arkanıza yaslanın.
 
 ## İndir
-- (Buraya tıklayarak)[https://github.com/barankrky/vcredist_installer/releases/latest] en son versiyonu indirebilirsiniz.
+- [Buraya tıklayarak](https://github.com/barankrky/vcredist_installer/releases/latest) en son versiyonu indirebilirsiniz.
 
 ## Kaynak Kodu
 
