@@ -7,7 +7,10 @@ Bu proje, Microsoft Visual C++ Runtimes'ı kolayca indirip kurmak için bir ara�
 - Tek tıkla tüm Microsoft Visual C++ Runtimes sürümlerini indirin ve kurun.
 - Otomatik kurulum, sadece çalıştırın ve arkanıza yaslanın.
 
-## Kurulum
+## İndir
+- Buraya tıklayarak en son versiyonu indirebilirsiniz.
+
+## Kaynak Kodu
 
 1. Bu projeyi klonlayın veya indirin:
    ```bash
